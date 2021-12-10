@@ -111,6 +111,17 @@ You can also safely remove this key if it's currently set to `false`:
   }
 ```
 
+### Remove mode from configuration
+
+If you were already using the JIT mode in your project, you had to add `mode: 'jit'` to your config file. This can now be removed:
+
+```diff-js tailwind.config.js
+  module.exports = {
+-   mode: 'jit',
+    // ...
+  }
+```
+
 ### Remove variant configuration
 
 In Tailwind CSS v3.0, every variant is automatically available for every utility by default, so you can remove the `variants` section from your `tailwind.config.js` file:
